@@ -1,0 +1,2105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeMentra AI | Your Personalized AI Coding Mentor</title>
+    <meta
+      name="description"
+      content="CodeMentra AI helps beginner programmers learn coding, understand errors, practice problems, build projects and prepare for technical interviews with personalized AI guidance."
+    />
+    <meta property="og:title" content="CodeMentra AI | Your Personalized AI Coding Mentor" />
+    <meta
+      property="og:description"
+      content="CodeMentra AI helps beginner programmers learn coding, understand errors, practice problems, build projects and prepare for technical interviews with personalized AI guidance."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#070b14" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+
+    <!-- Google Fonts: Syne (Display), Plus Jakarta Sans (Body), JetBrains Mono (Code & Tabular Data) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ====================================================================
+         3. STICKY NAVIGATION BAR (3-Zone Top Bar Contract)
+         ==================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-link" aria-label="CodeMentra AI Home">
+          <svg class="brand-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="56" height="56" rx="14" fill="#0B1120" stroke="#3B82F6" stroke-width="3" />
+            <path d="M27 20L15 32L27 44" stroke="#60A5FA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M37 44L49 32L37 20" stroke="#818CF8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" />
+            <path d="M35 22L37.2 28.8L44 31L37.2 33.2L35 40L32.8 33.2L26 31L32.8 28.8L35 22Z" fill="#93C5FD" />
+          </svg>
+          <span>CodeMentra AI</span>
+        </a>
+
+        <!-- Zone 2: Primary Navigation -->
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#problem" class="nav-link">Problem</a>
+          <a href="#solution" class="nav-link">Solution</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#learning-journey" class="nav-link">Learning Journey</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <!-- Zone 3: Primary Actions & Mobile Toggle -->
+        <div class="nav-actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-open-modal="login">Login</button>
+          <button type="button" class="btn btn-primary btn-sm" data-open-modal="start">Get Started</button>
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="hamburger-bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer" role="region" aria-label="Mobile Navigation">
+        <nav class="mobile-nav-list" aria-label="Mobile Navigation Links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#problem" class="nav-link">Problem</a>
+          <a href="#solution" class="nav-link">Solution</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#learning-journey" class="nav-link">Learning Journey</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+        <div class="mobile-nav-actions">
+          <button type="button" class="btn btn-secondary" data-open-modal="login">Login</button>
+          <button type="button" class="btn btn-primary" data-open-modal="start">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ====================================================================
+           4. HERO SECTION
+           ==================================================================== -->
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <!-- Left Hero Copy -->
+          <div class="hero-content">
+            <div class="hero-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>AI-Powered Learning Platform</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span>Learn Coding.</span>
+              <span class="text-accent">Understand Problems.</span>
+              <span>Build Real Skills.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              CodeMentra AI is your personalized AI coding mentor that helps you understand concepts,
+              debug errors, practice problems, build projects, and prepare for coding interviews.
+            </p>
+
+            <div class="hero-cta-group">
+              <button type="button" class="btn btn-primary" data-open-modal="start">
+                Start Learning
+              </button>
+              <a href="#features" class="btn btn-secondary">
+                Explore Features
+              </a>
+            </div>
+
+            <p class="hero-supporting-note">
+              Built for college students and beginner programmers.
+            </p>
+          </div>
+
+          <!-- Right Side Hero Visual: Interactive CodeMentra AI Dashboard Mockup -->
+          <div class="hero-workbench" aria-label="CodeMentra AI Interactive Coding Mentor Preview">
+            <div class="workbench-topbar">
+              <div class="window-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="workbench-file">calculateSum.js — CodeMentra Workspace (Prototype Demo)</span>
+              <span class="workbench-status">● AI Mentor Active</span>
+            </div>
+
+            <div class="workbench-body">
+              <!-- Code Editor Panel -->
+              <div class="code-panel">
+                <div class="code-panel-header">
+                  <span>CODE EDITOR</span>
+                  <button
+                    type="button"
+                    id="hero-toggle-fix-btn"
+                    class="btn btn-secondary btn-xs"
+                  >
+                    Test Hint Fix
+                  </button>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">1</span>
+                  <span><span class="tok-kw">function</span> <span class="tok-fn">calculateSum</span>(<span class="tok-param">a, b</span>) {</span>
+                </div>
+                <div class="code-line code-line-error" id="hero-code-line-2">
+                  <span class="line-num">2</span>
+                  <span>    <span class="tok-kw">return</span> a + <span class="tok-err">c</span>;<span class="typing-cursor" aria-hidden="true"></span></span>
+                </div>
+                <div class="code-line">
+                  <span class="line-num">3</span>
+                  <span>}</span>
+                </div>
+              </div>
+
+              <!-- Error Message Bar -->
+              <div class="error-diagnostics-bar" id="hero-error-banner" role="status" aria-live="polite">
+                <span>▲ ReferenceError: "c" is not defined (line 2)</span>
+                <span>1 Issue</span>
+              </div>
+
+              <!-- AI Mentor Panel -->
+              <div class="mentor-guidance-panel">
+                <div class="mentor-header">
+                  <span class="mentor-title">✦ AI MENTOR · GUIDED EXPLANATION</span>
+                  <span class="tabular-nums mono-tag">Hint Mode (No Direct Spoilers)</span>
+                </div>
+                <p class="mentor-quote" id="hero-mentor-quote">
+                  "There's a variable mismatch in your function."
+                </p>
+                <div class="mentor-breakdown">
+                  <div class="mentor-row">
+                    <span class="mentor-label issue">Issue:</span>
+                    <span>You used <code>"c"</code>, but the function receives <code>"b"</code>.</span>
+                  </div>
+                  <div class="mentor-row">
+                    <span class="mentor-label hint">Hint:</span>
+                    <span>Check the variable names in your return statement.</span>
+                  </div>
+                  <div class="mentor-row">
+                    <span class="mentor-label next">Next Step:</span>
+                    <span>Match the second operand to the parameter declared above.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progress Indicator -->
+              <div class="workbench-progress-footer">
+                <span>Module: Function Parameters &amp; Scope</span>
+                <div class="mini-progress-track" aria-label="Concept mastery progress">
+                  <div class="mini-progress-fill" id="hero-progress-fill"></div>
+                </div>
+                <span class="tabular-nums" id="hero-progress-label">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           5. PROBLEM SECTION
+           ==================================================================== -->
+      <section class="section section-alt" id="problem">
+        <div class="container">
+          <div class="problem-context-grid">
+            <div>
+              <div class="section-kicker">
+                <span class="section-kicker-dot" aria-hidden="true"></span>
+                <span>The Beginner's Barrier</span>
+              </div>
+              <h2 class="section-title">Learning to Code Shouldn't Feel Confusing.</h2>
+              <p class="section-desc">
+                For college students and first-time programmers, the hardest step isn't watching a tutorial—it's
+                understanding how concepts connect, why an error happens, and how to write working solutions
+                independently.
+              </p>
+            </div>
+
+            <div class="struggle-checklist">
+              <h3>Beginner programmers often struggle to:</h3>
+              <ul class="struggle-items">
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Understand programming concepts</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Debug errors</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Know what to learn next</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Apply concepts to real problems</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Find structured practice</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Build practical projects</li>
+                <li><span class="struggle-bullet" aria-hidden="true"></span>Prepare for technical interviews</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4 Problem Cards -->
+          <div class="problem-cards-grid">
+            <article class="problem-card">
+              <span class="card-index">01. Core Challenge</span>
+              <h3>Confusing Concepts</h3>
+              <p>"Understanding programming concepts without personalized guidance can be difficult."</p>
+            </article>
+
+            <article class="problem-card">
+              <span class="card-index">02. Core Challenge</span>
+              <h3>Debugging Frustration</h3>
+              <p>"Beginners often know that their code is wrong but don't understand why."</p>
+            </article>
+
+            <article class="problem-card">
+              <span class="card-index">03. Core Challenge</span>
+              <h3>Scattered Learning</h3>
+              <p>"Learning resources are spread across videos, articles, courses and coding platforms."</p>
+            </article>
+
+            <article class="problem-card">
+              <span class="card-index">04. Core Challenge</span>
+              <h3>Lack of Practical Guidance</h3>
+              <p>"Beginners need help moving from learning syntax to solving real programming problems."</p>
+            </article>
+          </div>
+
+          <!-- Visual Transition Flow -->
+          <div class="transition-flow-bar" aria-label="Progression from confusion to CodeMentra AI">
+            <div class="flow-stage">
+              <span>01 · CONFUSED</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-stage">
+              <span>02 · STUCK</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-stage">
+              <span>03 · UNSURE WHAT TO LEARN</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-stage resolved">
+              <span>✦ CODEMENTRA AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           6. SOLUTION SECTION
+           ==================================================================== -->
+      <section class="section" id="solution">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>AI Personal Coding Mentor</span>
+            </div>
+            <h2 class="section-title">Meet Your AI Coding Mentor.</h2>
+            <p class="section-desc">
+              CodeMentra AI combines personalized AI guidance, smart debugging, adaptive learning paths,
+              coding practice, projects, interview preparation and progress tracking in one learning experience.
+            </p>
+          </div>
+
+          <div class="solution-philosophy-callout">
+            <p>
+              <strong>Mentorship Over Copy-Paste Answers:</strong> Instead of simply giving users answers,
+              CodeMentra AI encourages them to understand problems, use hints, learn from errors and develop
+              independent problem-solving skills.
+            </p>
+            <a href="#debugger-demo" class="btn btn-secondary btn-sm">Try Interactive Debugger</a>
+          </div>
+
+          <!-- Large Product Showcase -->
+          <div class="solution-showcase-frame" aria-label="CodeMentra AI Unified Learning Experience Showcase">
+            <div class="showcase-header">
+              <span>CodeMentra AI · Unified Learning Environment (Product Concept Showcase)</span>
+              <span class="tabular-nums">Adaptive Learning Engine · Step-by-Step Guidance</span>
+            </div>
+
+            <div class="showcase-grid">
+              <div class="showcase-col">
+                <div class="showcase-block">
+                  <div class="showcase-block-header">
+                    <span>WELCOME &amp; CURRENT LEARNING PATH</span>
+                    <span class="tabular-nums">Track: Beginner to Placement Ready</span>
+                  </div>
+                  <h4>Welcome back, Learner — Module 2: Control Flow &amp; Functions</h4>
+                  <p class="text-muted-sm">
+                    Your adaptive roadmap adjusts lesson pacing based on how you solve coding exercises.
+                  </p>
+                  <div class="mini-progress-track track-md">
+                    <div class="mini-progress-fill"></div>
+                  </div>
+                </div>
+
+                <div class="showcase-block">
+                  <div class="showcase-block-header">
+                    <span>ACTIVE CODING CHALLENGE</span>
+                    <span class="tabular-nums">Problem #14 · Arrays</span>
+                  </div>
+                  <h4>Find the First Non-Repeating Element</h4>
+                  <p class="text-muted-sm">
+                    Write a function that returns the first element that appears only once in an integer array.
+                  </p>
+                  <div class="code-panel compact">
+                    <code>function firstUnique(arr) { /* Guided workspace active */ }</code>
+                  </div>
+                </div>
+
+                <div class="showcase-block">
+                  <div class="showcase-block-header">
+                    <span>RECOMMENDED NEXT LESSON</span>
+                    <span class="tabular-nums">Up Next · 12 mins</span>
+                  </div>
+                  <h4>Frequency Counters &amp; Hash Lookup Basics</h4>
+                  <p class="text-muted-sm">
+                    Recommended because it simplifies nested array loops into clean two-pass lookups.
+                  </p>
+                </div>
+              </div>
+
+              <div class="showcase-col">
+                <div class="showcase-block accent-border">
+                  <div class="showcase-block-header">
+                    <span class="mono-tag-cyan">✦ AI MENTOR GUIDANCE</span>
+                    <span>Step 2 of 3</span>
+                  </div>
+                  <h4>How to Think About This Problem</h4>
+                  <p class="text-body-secondary">
+                    "Instead of comparing every item to every other item with two nested loops, how could you count
+                    how many times each number appears first?"
+                  </p>
+                  <div class="mono-tag-warning">
+                    Hint Unlocked: Try storing counts in an object or Map before checking the order.
+                  </div>
+                </div>
+
+                <div class="showcase-block">
+                  <div class="showcase-block-header">
+                    <span>PROGRESS SNAPSHOT</span>
+                    <span class="tabular-nums">Sample Milestone Data</span>
+                  </div>
+                  <div class="showcase-snapshot-grid">
+                    <div>
+                      <span class="mono-tag">Concepts Understood</span>
+                      <div class="tabular-nums snapshot-metric-val">18 / 25</div>
+                    </div>
+                    <div>
+                      <span class="mono-tag">Independent Debug Rate</span>
+                      <div class="tabular-nums snapshot-metric-val success">82%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase-block">
+                  <div class="showcase-block-header">
+                    <span>RECENT LEARNING ACTIVITY</span>
+                    <span>Sample Log</span>
+                  </div>
+                  <div class="activity-list">
+                    <div class="activity-item">
+                      <span>Debugged off-by-one loop condition</span>
+                      <span class="tabular-nums mono-tag-success">Resolved via Hint 1</span>
+                    </div>
+                    <div class="activity-item">
+                      <span>Completed Function Parameters Quiz</span>
+                      <span class="tabular-nums">Score: 5/5</span>
+                    </div>
+                    <div class="activity-item">
+                      <span>Started Milestone 1: Portfolio Layout</span>
+                      <span class="tabular-nums">In Progress</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           7. CORE FEATURES (8 Feature Cards)
+           ==================================================================== -->
+      <section class="section section-alt" id="features">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Platform Capabilities</span>
+            </div>
+            <h2 class="section-title">Everything You Need to Become a Better Programmer.</h2>
+            <p class="section-desc">
+              Designed specifically for college students and beginner programmers to move from syntax confusion
+              to independent problem solving.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3l1.9 5.8h6.1l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8-4.9-3.6h6.1L12 3z" />
+                  </svg>
+                </div>
+                <h3>AI Coding Guidance</h3>
+                <p>"Get step-by-step guidance while learning programming concepts and solving coding problems."</p>
+              </div>
+              <div class="feature-chain">Concept → Example → Guided Check</div>
+            </article>
+
+            <!-- Feature 2 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                  </svg>
+                </div>
+                <h3>Smart Debugging</h3>
+                <p>"Understand what went wrong in your code, why it happened, and how to approach the problem."</p>
+              </div>
+              <div class="feature-chain">Error → Explanation → Hint → Learning</div>
+            </article>
+
+            <!-- Feature 3 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                </div>
+                <h3>Personalized Learning Roadmaps</h3>
+                <p>"Follow an adaptive learning path based on your current skills, goals and progress."</p>
+              </div>
+              <div class="feature-chain">Skill Baseline → Adaptive Modules</div>
+            </article>
+
+            <!-- Feature 4 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <h3>Coding Challenges</h3>
+                <p>"Practice coding problems that help strengthen programming and problem-solving skills."</p>
+              </div>
+              <div class="feature-chain">Graduated Difficulty · Hint Support</div>
+            </article>
+
+            <!-- Feature 5 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </div>
+                <h3>Real-World Projects</h3>
+                <p>"Apply what you learn by building practical programming projects."</p>
+              </div>
+              <div class="feature-chain">Beginner → Intermediate → Advanced</div>
+            </article>
+
+            <!-- Feature 6 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                </div>
+                <h3>Mock Interviews</h3>
+                <p>"Practice technical interview questions and improve your confidence before internships and placements."</p>
+              </div>
+              <div class="feature-chain">Prompt → Response → Structured Rubric</div>
+            </article>
+
+            <!-- Feature 7 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10" />
+                    <line x1="12" y1="20" x2="12" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="14" />
+                  </svg>
+                </div>
+                <h3>Progress Tracking</h3>
+                <p>"Track learning progress, coding practice and completed milestones in one place."</p>
+              </div>
+              <div class="feature-chain">Concepts · Challenges · Streak</div>
+            </article>
+
+            <!-- Feature 8 -->
+            <article class="feature-card">
+              <div>
+                <div class="feature-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4" />
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                  </svg>
+                </div>
+                <h3>Personalized Feedback</h3>
+                <p>"Receive feedback based on your learning activity and coding performance."</p>
+              </div>
+              <div class="feature-chain">Strengths · Focus Areas · Next Steps</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           8. HOW IT WORKS (5-Step Timeline)
+           ==================================================================== -->
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Guided Workflow</span>
+            </div>
+            <h2 class="section-title">From Confusion to Confidence.</h2>
+            <p class="section-desc">
+              A clear five-step mentoring loop designed to turn passive tutorial watching into active coding mastery.
+            </p>
+          </div>
+
+          <div class="timeline-steps">
+            <article class="timeline-step">
+              <span class="step-badge">STEP 01</span>
+              <h3>Tell Us Your Goal</h3>
+              <p>Choose what you want to learn or achieve.</p>
+            </article>
+
+            <article class="timeline-step">
+              <span class="step-badge">STEP 02</span>
+              <h3>Get Your Learning Path</h3>
+              <p>CodeMentra AI creates a personalized learning direction.</p>
+            </article>
+
+            <article class="timeline-step">
+              <span class="step-badge">STEP 03</span>
+              <h3>Learn &amp; Practice</h3>
+              <p>Understand concepts and solve coding challenges.</p>
+            </article>
+
+            <article class="timeline-step">
+              <span class="step-badge">STEP 04</span>
+              <h3>Debug &amp; Improve</h3>
+              <p>Use AI guidance, hints and explanations to understand mistakes.</p>
+            </article>
+
+            <article class="timeline-step">
+              <span class="step-badge">STEP 05</span>
+              <h3>Build &amp; Prepare</h3>
+              <p>Work on projects and practice for technical interviews.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           9. INTERACTIVE AI DEBUGGING DEMO ("See How CodeMentra Thinks.")
+           ==================================================================== -->
+      <section class="section section-alt" id="debugger-demo">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Interactive AI Debugging Demo (Frontend Prototype)</span>
+            </div>
+            <h2 class="section-title">See How CodeMentra Thinks.</h2>
+            <p class="section-desc">
+              Instead of handing over the finished code right away, CodeMentra AI diagnoses the root cause,
+              explains why the error happens, and gives you a targeted hint so you learn to fix it yourself.
+            </p>
+          </div>
+
+          <div class="debugger-toolbar">
+            <div class="scenario-tabs" role="tablist" aria-label="Debugging Example Scenarios">
+              <button type="button" class="scenario-tab active" data-scenario="sum">
+                Example 1: Variable Mismatch (calculateSum)
+              </button>
+              <button type="button" class="scenario-tab" data-scenario="greet">
+                Example 2: Undefined Parameter (greet)
+              </button>
+              <button type="button" class="scenario-tab" data-scenario="loop">
+                Example 3: Array Loop Boundary
+              </button>
+              <button type="button" class="scenario-tab" data-scenario="even">
+                Example 4: Condition Operator Bug
+              </button>
+            </div>
+            <span class="mono-tag">
+              Interactive Frontend Prototype Demo
+            </span>
+          </div>
+
+          <div class="debugger-workbench">
+            <!-- Left Side: Code Editor -->
+            <div class="debugger-editor-col">
+              <div class="editor-frame">
+                <div class="editor-header">
+                  <span id="debugger-filename">calculateSum.js</span>
+                  <span>JavaScript · Beginner Sandbox</span>
+                </div>
+                <label for="debugger-code-input" class="sr-only">Code Editor Input</label>
+                <textarea id="debugger-code-input" class="code-textarea" spellcheck="false">function calculateSum(a, b) {
+    return a + c;
+}</textarea>
+              </div>
+
+              <div class="debugger-actions">
+                <button type="button" class="btn btn-secondary btn-sm" id="test-code-btn">
+                  Test
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" id="analyze-code-btn">
+                  Analyze
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm" id="hint-code-btn">
+                  Hint
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm" id="show-solution-btn">
+                  Show Solution
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Side: AI Mentor Analysis -->
+            <div class="debugger-analysis-col">
+              <div class="analysis-output-card" aria-live="polite">
+                <div>
+                  <div class="analysis-card-top">
+                    <h3>AI Mentor Analysis</h3>
+                    <span id="analysis-status-badge" class="mono-tag-cyan">
+                      ● Guided Analysis Ready (Solution Hidden)
+                    </span>
+                  </div>
+
+                  <div class="analysis-block-list">
+                    <div class="analysis-item problem" id="analysis-item-problem">
+                      <span class="analysis-item-label">Error / Problem detected:</span>
+                      <p id="analysis-problem">"c" is not defined.</p>
+                    </div>
+
+                    <div class="analysis-item why" id="analysis-item-why">
+                      <span class="analysis-item-label">AI Mentor explanation:</span>
+                      <p id="analysis-why">
+                        There is a variable mismatch in the function. You used "c", but the function receives "b".
+                      </p>
+                    </div>
+
+                    <div class="analysis-item hint" id="analysis-item-hint">
+                      <span class="analysis-item-label">Hint:</span>
+                      <p id="analysis-hint">Check the variable names in the return statement.</p>
+                    </div>
+
+                    <div class="analysis-item next-step" id="analysis-item-next">
+                      <span class="analysis-item-label">Next Step:</span>
+                      <p id="analysis-next">
+                        Match the second operand to the parameter declared above.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hidden Corrected Code Solution (Only revealed when user clicks Show Solution) -->
+                <div class="solution-reveal-box" id="solution-reveal-box">
+                  <span class="mono-tag">
+                    Corrected Code Reference:
+                  </span>
+                  <pre id="solution-code-pre">function calculateSum(a, b) {
+    return a + b;
+}</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           10. LEARNING JOURNEY (6 Stages)
+           ==================================================================== -->
+      <section class="section" id="learning-journey">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Structured Progression</span>
+            </div>
+            <h2 class="section-title">Your Journey With CodeMentra</h2>
+            <p class="section-desc">
+              A six-stage developmental pathway that builds programming intuition from first syntax to placement readiness.
+            </p>
+          </div>
+
+          <div class="journey-grid">
+            <article class="journey-stage-card">
+              <span class="journey-num">01</span>
+              <h3>Understand</h3>
+              <p>Learn fundamental concepts.</p>
+            </article>
+
+            <article class="journey-stage-card">
+              <span class="journey-num">02</span>
+              <h3>Practice</h3>
+              <p>Solve coding challenges.</p>
+            </article>
+
+            <article class="journey-stage-card">
+              <span class="journey-num">03</span>
+              <h3>Debug</h3>
+              <p>Understand and fix mistakes.</p>
+            </article>
+
+            <article class="journey-stage-card">
+              <span class="journey-num">04</span>
+              <h3>Build</h3>
+              <p>Create real-world projects.</p>
+            </article>
+
+            <article class="journey-stage-card">
+              <span class="journey-num">05</span>
+              <h3>Prepare</h3>
+              <p>Practice technical interviews.</p>
+            </article>
+
+            <article class="journey-stage-card">
+              <span class="journey-num">06</span>
+              <h3>Grow</h3>
+              <p>Track progress and improve continuously.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           11. PERSONALIZED DASHBOARD PREVIEW
+           ==================================================================== -->
+      <section class="section section-alt" id="dashboard-preview">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Interactive Workspace Preview</span>
+            </div>
+            <h2 class="section-title">Your Personalized Learning Command Center.</h2>
+            <p class="section-desc">
+              Explore how CodeMentra AI organizes your lessons, coding challenges, AI mentor hints, and
+              milestone tracking inside a distraction-free student workspace (sample demonstration data shown).
+            </p>
+          </div>
+
+          <div class="dashboard-mockup-shell">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar" aria-label="Dashboard Preview Navigation">
+              <div class="sidebar-nav">
+                <button type="button" class="sidebar-tab-btn active" data-dash-tab="overview">
+                  <span>Overview</span>
+                  <span class="tabular-nums">●</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="learn">
+                  <span>Learn</span>
+                  <span class="tabular-nums">68%</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="challenges">
+                  <span>Challenges</span>
+                  <span class="tabular-nums">42</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="projects">
+                  <span>Projects</span>
+                  <span class="tabular-nums">03</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="mentor">
+                  <span>AI Mentor</span>
+                  <span class="tabular-nums">✦</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="interviews">
+                  <span>Mock Interviews</span>
+                  <span class="tabular-nums">04</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="progress">
+                  <span>Progress</span>
+                  <span class="tabular-nums">↗</span>
+                </button>
+                <button type="button" class="sidebar-tab-btn" data-dash-tab="profile">
+                  <span>Profile</span>
+                  <span class="tabular-nums">⚙</span>
+                </button>
+              </div>
+
+              <div class="sidebar-helper-note">
+                Click any sidebar tab to preview workspace modules.
+              </div>
+            </aside>
+
+            <!-- Main Dashboard Canvas -->
+            <div class="dashboard-main-canvas" aria-live="polite">
+              <div class="dashboard-greeting-bar">
+                <div>
+                  <h3 id="dash-heading">Good morning, Alex 👋</h3>
+                  <p id="dash-subtitle" class="text-muted-xs">
+                    Interactive Product Preview · Sample Learner Workspace
+                  </p>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" data-open-modal="start">
+                  Resume Practice Session
+                </button>
+              </div>
+
+              <!-- 4 Progress Cards (Sample Demonstration Values) -->
+              <div class="dashboard-stats-row">
+                <div class="dash-stat-box">
+                  <span class="dash-stat-label">Concepts Learned</span>
+                  <span class="dash-stat-value tabular-nums">24</span>
+                </div>
+                <div class="dash-stat-box">
+                  <span class="dash-stat-label">Challenges Solved</span>
+                  <span class="dash-stat-value tabular-nums">42</span>
+                </div>
+                <div class="dash-stat-box">
+                  <span class="dash-stat-label">Projects</span>
+                  <span class="dash-stat-value tabular-nums">3</span>
+                </div>
+                <div class="dash-stat-box">
+                  <span class="dash-stat-label">Learning Streak</span>
+                  <span class="dash-stat-value tabular-nums">12 Days</span>
+                </div>
+              </div>
+
+              <div class="dashboard-middle-grid">
+                <!-- Continue Learning & Current Challenge -->
+                <div class="dash-panel dash-panel-stack">
+                  <div>
+                    <span class="mono-tag-cyan">
+                      CONTINUE LEARNING
+                    </span>
+                    <div class="dash-course-header">
+                      <h4 id="dash-course-title">JavaScript Fundamentals</h4>
+                      <span id="dash-course-progress" class="tabular-nums text-muted-sm">
+                        Progress: 68%
+                      </span>
+                    </div>
+                    <div class="mini-progress-track track-md">
+                      <div class="mini-progress-fill" id="dash-course-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="dash-divider-section">
+                    <span class="mono-tag">
+                      CURRENT CHALLENGE
+                    </span>
+                    <h4 id="dash-challenge-title">Array Methods</h4>
+                    <p id="dash-challenge-meta" class="text-muted-xs">
+                      Practice transforming and filtering datasets without mutating the source array.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- AI Mentor Active Card -->
+                <div class="dash-panel dash-panel-mentor">
+                  <div>
+                    <span class="mono-tag-cyan">
+                      ✦ AI MENTOR
+                    </span>
+                    <p id="dash-mentor-tip" class="dash-mentor-quote">
+                      "You're close. Try checking how the loop updates the index."
+                    </p>
+                  </div>
+                  <div id="dash-mentor-context" class="dash-mentor-footer">
+                    Active hint on Array Methods · Sample Mentor Prompt
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           12. PROJECTS SECTION ("Learn By Building.")
+           ==================================================================== -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="projects-filter-bar">
+            <div>
+              <div class="section-kicker">
+                <span class="section-kicker-dot" aria-hidden="true"></span>
+                <span>Example Learning Projects</span>
+              </div>
+              <h2 class="section-title compact-mb">Learn By Building.</h2>
+              <p class="section-desc">
+                Apply programming concepts to structured, milestone-guided curriculum projects across three difficulty tiers.
+              </p>
+            </div>
+
+            <div class="scenario-tabs" role="group" aria-label="Filter learning projects by difficulty">
+              <button type="button" class="scenario-tab active" data-project-filter="all">All Levels (5)</button>
+              <button type="button" class="scenario-tab" data-project-filter="Beginner">Beginner</button>
+              <button type="button" class="scenario-tab" data-project-filter="Intermediate">Intermediate</button>
+              <button type="button" class="scenario-tab" data-project-filter="Advanced">Advanced</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card" data-level="Beginner">
+              <div>
+                <div class="project-meta-line">Level: Beginner · Curriculum Project 01</div>
+                <h3>Personal Portfolio</h3>
+                <p>
+                  Design and code a responsive developer portfolio website featuring project showcases, skill breakdowns, and accessible navigation.
+                </p>
+                <div class="project-skills-text">
+                  Skills: HTML5 · CSS3 Grid &amp; Flexbox · Responsive Design · DOM Events
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-project="portfolio">
+                View Project
+              </button>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-level="Beginner">
+              <div>
+                <div class="project-meta-line">Level: Beginner · Curriculum Project 02</div>
+                <h3>Task Management App</h3>
+                <p>
+                  Build an interactive task organizer with dynamic creation, status filtering, state persistence, and clean keyboard interaction.
+                </p>
+                <div class="project-skills-text">
+                  Skills: JavaScript State · Array Methods · LocalStorage · Event Delegation
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-project="taskapp">
+                View Project
+              </button>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-level="Intermediate">
+              <div>
+                <div class="project-meta-line">Level: Intermediate · Curriculum Project 03</div>
+                <h3>Weather Dashboard</h3>
+                <p>
+                  Fetch and display real-time meteorological metrics using asynchronous API calls, dynamic search, and resilient error states.
+                </p>
+                <div class="project-skills-text">
+                  Skills: Async/Await · REST APIs · JSON Parsing · Error Handling
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-project="weather">
+                View Project
+              </button>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-level="Intermediate">
+              <div>
+                <div class="project-meta-line">Level: Intermediate · Curriculum Project 04</div>
+                <h3>Student Management System</h3>
+                <p>
+                  Create a data-driven student record application supporting CRUD operations, input validation, search, and academic performance summaries.
+                </p>
+                <div class="project-skills-text">
+                  Skills: Data Structures · CRUD Logic · Form Validation · Search &amp; Sort
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-project="student">
+                View Project
+              </button>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-level="Advanced">
+              <div>
+                <div class="project-meta-line">Level: Advanced · Curriculum Project 05</div>
+                <h3>Full-Stack Web Application</h3>
+                <p>
+                  Architect a complete client-server application integrating frontend views, RESTful API endpoints, authentication, and database persistence.
+                </p>
+                <div class="project-skills-text">
+                  Skills: Full-Stack Architecture · REST APIs · Database Modeling · Auth Flows
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-project="fullstack">
+                View Project
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           13. MOCK INTERVIEW SECTION ("Prepare Before the Interview.")
+           ==================================================================== -->
+      <section class="section section-alt" id="mock-interview">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Technical Interview Simulator (Frontend Demo)</span>
+            </div>
+            <h2 class="section-title">Prepare Before the Interview.</h2>
+            <p class="section-desc">
+              Practice articulating data structures, algorithms, and core programming concepts clearly before campus
+              internships and coding placement rounds.
+            </p>
+          </div>
+
+          <div class="interview-simulator-grid">
+            <!-- Left: AI Interviewer & User Answer -->
+            <div>
+              <div class="interviewer-question-box">
+                <div class="interviewer-meta-row">
+                  <span>✦ AI INTERVIEWER</span>
+                  <span id="interview-topic-label">Data Structures · Question 01 of 04</span>
+                </div>
+                <h4 id="interview-question-text">
+                  "What is the difference between an array and a linked list?"
+                </h4>
+              </div>
+
+              <div class="interview-label-row">
+                <label for="interview-answer-input" class="form-label">
+                  Your Answer:
+                </label>
+                <button
+                  type="button"
+                  id="fill-sample-answer-btn"
+                  class="sample-answer-link"
+                >
+                  Insert Sample Answer
+                </button>
+              </div>
+
+              <textarea
+                id="interview-answer-input"
+                class="interview-answer-input"
+                placeholder="Type your explanation here (e.g., how elements are stored in memory and how elements are accessed)..."
+              ></textarea>
+
+              <div class="debugger-actions">
+                <button type="button" class="btn btn-primary" id="submit-interview-btn">
+                  Submit Answer
+                </button>
+                <button type="button" class="btn btn-secondary" id="next-interview-btn">
+                  Next Question
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Structured Evaluation Feedback Card -->
+            <div class="interview-feedback-panel" aria-live="polite">
+              <div>
+                <div class="interview-feedback-header">
+                  <span class="mono-tag">
+                    AI INTERVIEW FEEDBACK CARD
+                  </span>
+                  <span id="interview-status-badge" class="mono-tag-success">
+                    ● Sample Evaluation Preview
+                  </span>
+                </div>
+
+                <div class="analysis-panel-stack">
+                  <div class="analysis-item next-step">
+                    <span class="analysis-item-label">Feedback:</span>
+                    <p id="interview-feedback-text">Good explanation.</p>
+                  </div>
+
+                  <div class="analysis-item hint">
+                    <span class="analysis-item-label">Improve:</span>
+                    <p id="interview-improve-text">Mention memory allocation and access complexity.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="interview-rubric-note">
+                <strong>What Interviewers Look For:</strong> Contiguous vs. non-contiguous memory layout,
+                <code>O(1)</code> random access in arrays vs. <code>O(n)</code> traversal in linked lists, and insertion tradeoffs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           14. PROGRESS TRACKING ("See Your Progress. Know Your Next Step.")
+           ==================================================================== -->
+      <section class="section" id="progress-tracking">
+        <div class="container">
+          <div class="projects-filter-bar">
+            <div>
+              <div class="section-kicker">
+                <span class="section-kicker-dot" aria-hidden="true"></span>
+                <span>Analytics Demonstration · Sample Learner Data</span>
+              </div>
+              <h2 class="section-title compact-mb">See Your Progress. Know Your Next Step.</h2>
+              <p class="section-desc">
+                Visualize weekly coding consistency, solved problem categories, completed concepts, and project milestones.
+              </p>
+            </div>
+
+            <div class="scenario-tabs" role="group" aria-label="Toggle sample weekly activity data">
+              <button type="button" class="scenario-tab active" data-week-toggle="current">Sample Week A</button>
+              <button type="button" class="scenario-tab" data-week-toggle="previous">Sample Week B</button>
+            </div>
+          </div>
+
+          <div class="progress-demo-grid">
+            <!-- Left: Weekly Coding Activity Chart -->
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div>
+                  <h3>Weekly Coding Activity (Demo View)</h3>
+                  <p class="text-muted-xs">
+                    Focused practice minutes and debugging sessions per day
+                  </p>
+                </div>
+                <span class="tabular-nums mono-tag-cyan">
+                  Learning Streak: 12 Days
+                </span>
+              </div>
+
+              <div class="bar-chart-grid" aria-label="Sample weekly coding activity bar chart">
+                <div class="bar-col">
+                  <span class="bar-val" id="val-mon">35m</span>
+                  <div class="bar-fill" id="bar-mon" style="height: 45%;"></div>
+                  <span class="bar-label">Mon</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-tue">50m</span>
+                  <div class="bar-fill" id="bar-tue" style="height: 65%;"></div>
+                  <span class="bar-label">Tue</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-wed">40m</span>
+                  <div class="bar-fill" id="bar-wed" style="height: 55%;"></div>
+                  <span class="bar-label">Wed</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-thu">65m</span>
+                  <div class="bar-fill" id="bar-thu" style="height: 85%;"></div>
+                  <span class="bar-label">Thu</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-fri">55m</span>
+                  <div class="bar-fill" id="bar-fri" style="height: 70%;"></div>
+                  <span class="bar-label">Fri</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-sat">75m</span>
+                  <div class="bar-fill" id="bar-sat" style="height: 95%;"></div>
+                  <span class="bar-label">Sat</span>
+                </div>
+                <div class="bar-col">
+                  <span class="bar-val" id="val-sun">45m</span>
+                  <div class="bar-fill" id="bar-sun" style="height: 60%;"></div>
+                  <span class="bar-label">Sun</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Milestone Breakdown -->
+            <div class="chart-card">
+              <h3>Milestone Breakdown (Sample Preview)</h3>
+              <p class="text-muted-xs">
+                Tracked across concepts, challenges, and guided projects
+              </p>
+
+              <div class="skill-progress-list">
+                <div class="skill-progress-item">
+                  <div class="skill-progress-top">
+                    <span>Concepts Completed (Variables, Loops, Functions, Scope)</span>
+                    <span class="tabular-nums">24 / 30</span>
+                  </div>
+                  <div class="mini-progress-track track-md">
+                    <div class="mini-progress-fill" style="width: 80%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-progress-top">
+                    <span>Problems Solved (Arrays, Strings, Logic)</span>
+                    <span class="tabular-nums">42 / 60</span>
+                  </div>
+                  <div class="mini-progress-track track-md">
+                    <div class="mini-progress-fill" style="width: 70%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-progress-top">
+                    <span>Projects Completed (Guided Portfolio &amp; Apps)</span>
+                    <span class="tabular-nums">3 / 5</span>
+                  </div>
+                  <div class="mini-progress-track track-md">
+                    <div class="mini-progress-fill" style="width: 60%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-progress-item">
+                  <div class="skill-progress-top">
+                    <span>Mock Interview Readiness Checkpoints</span>
+                    <span class="tabular-nums">7 / 10</span>
+                  </div>
+                  <div class="mini-progress-track track-md">
+                    <div class="mini-progress-fill" style="width: 70%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           15. WHY CODEMENTRA ("Designed Around the Beginner.")
+           ==================================================================== -->
+      <section class="section section-alt" id="why-codementra">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Pedagogical Difference</span>
+            </div>
+            <h2 class="section-title">Designed Around the Beginner.</h2>
+            <p class="section-desc">
+              CodeMentra AI focuses on helping beginners understand and solve problems independently.
+            </p>
+          </div>
+
+          <div class="comparison-grid">
+            <!-- Traditional Learning -->
+            <div class="comparison-card">
+              <span class="card-index">Fragmented Workflow</span>
+              <h3>Traditional Learning</h3>
+              <p class="text-body-muted">
+                Jumping between disconnected tutorials and forums without personalized diagnostic feedback.
+              </p>
+
+              <div class="flow-vertical-steps">
+                <div class="flow-step-node"><span>Resources</span><span class="tabular-nums">01</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Search</span><span class="tabular-nums">02</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Watch / Read</span><span class="tabular-nums">03</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Try</span><span class="tabular-nums">04</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node node-error">
+                  <span>Get Stuck</span><span>▲ Friction Point</span>
+                </div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Search Again</span><span class="tabular-nums">Loop</span></div>
+              </div>
+            </div>
+
+            <!-- CodeMentra AI -->
+            <div class="comparison-card codementra-flow">
+              <span class="card-index cyan">Structured Mentorship Loop</span>
+              <h3>CodeMentra AI</h3>
+              <p class="text-body-secondary">
+                CodeMentra AI focuses on helping beginners understand and solve problems independently.
+              </p>
+
+              <div class="flow-vertical-steps">
+                <div class="flow-step-node"><span>Goal</span><span class="tabular-nums">01</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Personalized Learning</span><span class="tabular-nums">02</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Practice</span><span class="tabular-nums">03</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>AI Guidance</span><span class="tabular-nums">04</span></div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node node-success">
+                  <span>Understand Errors</span><span>● Guided Hint</span>
+                </div>
+                <div class="flow-down-arrow" aria-hidden="true">↓</div>
+                <div class="flow-step-node"><span>Build Skills</span><span class="tabular-nums">Mastery</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           16. UNIQUE VALUE PROPOSITION
+           ==================================================================== -->
+      <section class="section" id="uvp">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Unique Value Proposition</span>
+            </div>
+            <h2 class="section-title">Personalized AI Coding Mentorship.</h2>
+            <p class="section-desc">
+              CodeMentra AI provides step-by-step guidance, smart debugging, adaptive learning paths and
+              practical coding challenges in one learning experience.
+            </p>
+          </div>
+
+          <div class="uvp-architecture">
+            <div class="uvp-side-col">
+              <article class="uvp-pillar-card">
+                <span class="card-index">Pillar 01</span>
+                <h3>Personalized Guidance</h3>
+                <p class="text-body-muted">
+                  Step-by-step explanations tailored to a beginner's current conceptual understanding.
+                </p>
+              </article>
+
+              <article class="uvp-pillar-card">
+                <span class="card-index">Pillar 02</span>
+                <h3>Smart Debugging</h3>
+                <p class="text-body-muted">
+                  Translates cryptic compiler and runtime errors into clear causes, hints, and next steps.
+                </p>
+              </article>
+            </div>
+
+            <!-- Central CSS/HTML AI Mentor Graphic -->
+            <div class="uvp-center-core" aria-label="CodeMentra AI Core Mentor Engine">
+              <span class="mono-tag-cyan">
+                ✦ CORE ENGINE
+              </span>
+              <strong class="uvp-core-title">
+                CodeMentra AI
+              </strong>
+              <span class="mono-tag">
+                Your Personalized AI Coding Mentor
+              </span>
+            </div>
+
+            <div class="uvp-side-col">
+              <article class="uvp-pillar-card">
+                <span class="card-index">Pillar 03</span>
+                <h3>Adaptive Learning</h3>
+                <p class="text-body-muted">
+                  Dynamic learning roadmaps that evolve alongside your problem-solving accuracy.
+                </p>
+              </article>
+
+              <article class="uvp-pillar-card">
+                <span class="card-index">Pillar 04</span>
+                <h3>Practical Coding</h3>
+                <p class="text-body-muted">
+                  Hands-on coding challenges, milestone projects, and technical interview preparation.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           17. WHO IS IT FOR? (3 Audience Cards)
+           ==================================================================== -->
+      <section class="section section-alt" id="audience">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Target Segments</span>
+            </div>
+            <h2 class="section-title">Built for Learners and Coding Communities.</h2>
+            <p class="section-desc">
+              Designed for individual students mastering their first programming languages as well as academic institutions supporting coding readiness.
+            </p>
+          </div>
+
+          <div class="three-col-grid">
+            <article class="audience-card">
+              <span class="card-index">Primary Segment 01</span>
+              <h3>College Students</h3>
+              <p class="text-body-muted">
+                Build practical programming skills for academics, internships and placements.
+              </p>
+            </article>
+
+            <article class="audience-card">
+              <span class="card-index">Primary Segment 02</span>
+              <h3>Beginner Programmers</h3>
+              <p class="text-body-muted">
+                Get structured guidance while learning programming and solving coding problems.
+              </p>
+            </article>
+
+            <article class="audience-card">
+              <span class="card-index">Secondary Segment</span>
+              <h3>Colleges &amp; Training Institutes</h3>
+              <p class="text-body-muted">
+                Support students in developing practical coding skills.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           18. BUSINESS MODEL / PRICING ("Start Free. Upgrade When You're Ready.")
+           ==================================================================== -->
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Planned Business Model · Freemium &amp; Subscription</span>
+            </div>
+            <h2 class="section-title">Start Free. Upgrade When You're Ready.</h2>
+            <p class="section-desc">
+              CodeMentra AI is designed around an accessible Freemium Model for every beginner, paired with a
+              planned Subscription Model for deep project mentorship and interview readiness.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- FREE Tier -->
+            <article class="pricing-card">
+              <div>
+                <div class="pricing-card-top">
+                  <span class="mono-tag-cyan">
+                    PRIMARY · FREEMIUM MODEL
+                  </span>
+                  <span class="mono-tag">
+                    Core Access
+                  </span>
+                </div>
+                <h3 class="pricing-tier-name">FREE</h3>
+                <p class="text-body-muted">
+                  Essential AI coding guidance and foundational practice for beginners starting their journey.
+                </p>
+
+                <ul class="pricing-feature-list">
+                  <li>
+                    <span class="mono-tag-success" aria-hidden="true">✓</span>
+                    <span>Basic AI coding guidance</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-success" aria-hidden="true">✓</span>
+                    <span>Selected coding challenges</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-success" aria-hidden="true">✓</span>
+                    <span>Basic learning roadmap</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-success" aria-hidden="true">✓</span>
+                    <span>Basic progress tracking</span>
+                  </li>
+                </ul>
+              </div>
+
+              <button type="button" class="btn btn-secondary" data-open-modal="start">
+                Start Free Journey
+              </button>
+            </article>
+
+            <!-- PREMIUM Tier -->
+            <article class="pricing-card premium">
+              <div>
+                <div class="pricing-card-top">
+                  <span class="mono-tag-cyan">
+                    SECONDARY · SUBSCRIPTION MODEL
+                  </span>
+                  <span class="mono-tag">
+                    Planned Tier
+                  </span>
+                </div>
+                <h3 class="pricing-tier-name">PREMIUM</h3>
+                <p class="text-body-secondary">
+                  Complete AI mentorship, smart debugging, guided projects, and mock interviews for placement preparation.
+                </p>
+
+                <ul class="pricing-feature-list">
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Advanced AI coding guidance</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Smart debugging</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Expanded learning paths</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>More coding challenges</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Project guidance</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Mock interviews</span>
+                  </li>
+                  <li>
+                    <span class="mono-tag-cyan" aria-hidden="true">✦</span>
+                    <span>Advanced progress tracking</span>
+                  </li>
+                </ul>
+              </div>
+
+              <button type="button" class="btn btn-primary" data-open-modal="start">
+                Join Early Access List
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           19. FUTURE ROADMAP (4 Planned Development Phases)
+           ==================================================================== -->
+      <section class="section section-alt" id="roadmap">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Planned Product Development Stages</span>
+            </div>
+            <h2 class="section-title">Future Product Roadmap.</h2>
+            <p class="section-desc">
+              Our structured venture development plan from initial prototype validation to full platform launch.
+            </p>
+          </div>
+
+          <div class="roadmap-grid">
+            <article class="roadmap-card">
+              <span class="step-badge">PHASE 1 · CURRENT</span>
+              <h3>Prototype</h3>
+              <ul>
+                <li><span aria-hidden="true">•</span><span>Core UI</span></li>
+                <li><span aria-hidden="true">•</span><span>AI mentor concept</span></li>
+                <li><span aria-hidden="true">•</span><span>Basic coding guidance</span></li>
+              </ul>
+            </article>
+
+            <article class="roadmap-card">
+              <span class="step-badge">PHASE 2 · PLANNED</span>
+              <h3>MVP</h3>
+              <ul>
+                <li><span aria-hidden="true">•</span><span>AI coding guidance</span></li>
+                <li><span aria-hidden="true">•</span><span>Smart debugging</span></li>
+                <li><span aria-hidden="true">•</span><span>Learning paths</span></li>
+                <li><span aria-hidden="true">•</span><span>Coding challenges</span></li>
+              </ul>
+            </article>
+
+            <article class="roadmap-card">
+              <span class="step-badge">PHASE 3 · PLANNED</span>
+              <h3>Expansion</h3>
+              <ul>
+                <li><span aria-hidden="true">•</span><span>More programming languages</span></li>
+                <li><span aria-hidden="true">•</span><span>Advanced debugging</span></li>
+                <li><span aria-hidden="true">•</span><span>Project-based learning</span></li>
+                <li><span aria-hidden="true">•</span><span>Stronger progress tracking</span></li>
+              </ul>
+            </article>
+
+            <article class="roadmap-card">
+              <span class="step-badge">PHASE 4 · PLANNED</span>
+              <h3>Launch</h3>
+              <ul>
+                <li><span aria-hidden="true">•</span><span>Freemium model</span></li>
+                <li><span aria-hidden="true">•</span><span>Subscription model</span></li>
+                <li><span aria-hidden="true">•</span><span>User acquisition</span></li>
+                <li><span aria-hidden="true">•</span><span>Continuous product improvement</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           20. TECHNOLOGY SECTION & 21. TRUST / VALIDATION SECTION (#about)
+           ==================================================================== -->
+      <section class="section" id="about">
+        <div class="container">
+          <!-- Technology Stack -->
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Planned Product Architecture</span>
+            </div>
+            <h2 class="section-title">Built With Modern Technology.</h2>
+            <p class="section-desc">
+              Planned full-stack engineering direction for the CodeMentra AI platform as documented in our venture roadmap
+              (note: this interactive showcase website is built with lightweight HTML5, CSS3, and vanilla JavaScript).
+            </p>
+          </div>
+
+          <div class="tech-grid">
+            <article class="tech-card">
+              <span class="card-index">Frontend Layer (Planned App)</span>
+              <h3>React.js</h3>
+              <p class="text-muted-sm">
+                Component-driven interactive coding workspace, live mentor panels, and adaptive roadmap views.
+              </p>
+            </article>
+
+            <article class="tech-card">
+              <span class="card-index">Backend Runtime (Planned App)</span>
+              <h3>Node.js</h3>
+              <p class="text-muted-sm">
+                Scalable asynchronous server orchestration for learner sessions, challenge evaluation, and API routing.
+              </p>
+            </article>
+
+            <article class="tech-card">
+              <span class="card-index">Programming / AI Engine</span>
+              <h3>Python &amp; AI APIs</h3>
+              <p class="text-muted-sm">
+                Intelligent code diagnostics, hint generation, error explanation pipelines, and adaptive path logic.
+              </p>
+            </article>
+
+            <article class="tech-card">
+              <span class="card-index">Database Layer</span>
+              <h3>MongoDB</h3>
+              <p class="text-muted-sm">
+                Flexible document storage for learner progress, challenge submissions, and personalized roadmaps.
+              </p>
+            </article>
+
+            <article class="tech-card">
+              <span class="card-index">Service Communication</span>
+              <h3>REST APIs</h3>
+              <p class="text-muted-sm">
+                Structured communication between the web/mobile client interfaces and backend mentoring services.
+              </p>
+            </article>
+
+            <article class="tech-card">
+              <span class="card-index">Development &amp; Version Control</span>
+              <h3>GitHub</h3>
+              <p class="text-muted-sm">
+                Collaborative source control, continuous integration workflows, and project repository management.
+              </p>
+            </article>
+          </div>
+
+          <!-- 21. Trust / Early User Validation Section -->
+          <div id="validation">
+            <div class="section-header">
+              <div class="section-kicker">
+                <span class="section-kicker-dot" aria-hidden="true"></span>
+                <span>Wadhwani Venture Journey · Early Discovery &amp; Prototype Validation</span>
+              </div>
+              <h2 class="section-title">Validated With Early Users.</h2>
+              <p class="section-desc">
+                Transparent early-stage problem discovery and prototype testing conducted with target learners during
+                our venture validation phase.
+              </p>
+            </div>
+
+            <div class="validation-grid">
+              <!-- Problem Validation -->
+              <div class="validation-panel">
+                <span class="card-index">Stage 01 · Problem Discovery Interviews</span>
+                <h3>Problem Validation</h3>
+                <p class="text-body-muted">
+                  Direct interviews with beginner programmers and college students investigating coding and debugging pain points.
+                </p>
+
+                <div class="validation-metrics-grid">
+                  <div class="validation-stat-item">
+                    <span class="validation-stat-num tabular-nums">13</span>
+                    <span class="text-muted-sm">
+                      Users interviewed (<strong>10</strong> in-person · <strong>3</strong> virtual)
+                    </span>
+                  </div>
+
+                  <div class="validation-stat-item">
+                    <span class="validation-stat-num tabular-nums">11 / 13</span>
+                    <span class="text-muted-sm">
+                      Considered the problem important
+                    </span>
+                  </div>
+
+                  <div class="validation-stat-item validation-stat-wide">
+                    <span class="validation-stat-num tabular-nums">9 / 13</span>
+                    <span class="text-muted-sm">
+                      Were dissatisfied with current alternatives (scattered tutorials &amp; generic answer tools)
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Prototype Validation -->
+              <div class="validation-panel">
+                <span class="card-index">Stage 02 · Interactive Concept Evaluation</span>
+                <h3>Prototype Validation</h3>
+                <p class="text-body-muted">
+                  Early user testing sessions evaluating the CodeMentra AI guided mentoring and debugging prototype.
+                </p>
+
+                <div class="validation-metrics-grid">
+                  <div class="validation-stat-item">
+                    <span class="validation-stat-num tabular-nums">10</span>
+                    <span class="text-muted-sm">
+                      Users engaged with the prototype
+                    </span>
+                  </div>
+
+                  <div class="validation-stat-item">
+                    <span class="validation-stat-num tabular-nums success">8 / 10</span>
+                    <span class="text-muted-sm">
+                      Liked or loved the prototype experience
+                    </span>
+                  </div>
+
+                  <div class="validation-stat-item validation-stat-wide">
+                    <span class="validation-stat-num tabular-nums warning">2 / 10</span>
+                    <span class="text-muted-sm">
+                      Were neutral or mostly unhappy — directly informing our next MVP iteration priorities
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           25. FAQ SECTION
+           ==================================================================== -->
+      <section class="section section-alt" id="faq">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="section-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Frequently Asked Questions</span>
+            </div>
+            <h2 class="section-title">Questions About CodeMentra AI.</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button type="button" class="faq-question-btn" aria-expanded="true" aria-controls="faq-answer-1">
+                <span>What is CodeMentra AI?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-1">
+                CodeMentra AI is an AI-powered coding mentor designed to help beginner programmers learn concepts,
+                debug errors, practice problems and build practical programming skills.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-2">
+                <span>Who is CodeMentra AI for?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-2">
+                College students, beginner programmers and learners preparing for coding internships and placements.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-3">
+                <span>Does CodeMentra AI simply give coding answers?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-3">
+                The platform is designed to encourage understanding through hints, explanations, step-by-step
+                guidance and feedback rather than only providing answers.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-4">
+                <span>What can I learn?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-4">
+                Users can learn programming concepts, practice coding, solve problems, work on projects and
+                prepare for technical interviews.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-5">
+                <span>Is CodeMentra AI free?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" id="faq-answer-5">
+                The planned business model uses a freemium approach with additional features available through a
+                subscription model.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           22. CALL TO ACTION
+           ==================================================================== -->
+      <section class="section" id="cta">
+        <div class="container">
+          <div class="final-cta-box">
+            <div class="section-kicker centered-kicker">
+              <span class="section-kicker-dot" aria-hidden="true"></span>
+              <span>Your Personalized AI Coding Mentor</span>
+            </div>
+            <h2 class="section-title final-cta-title">
+              Ready to Stop Guessing and Start Understanding?
+            </h2>
+            <p class="section-desc final-cta-desc">
+              Learn coding with guidance that helps you think, debug and build.
+            </p>
+            <div class="final-cta-actions">
+              <button type="button" class="btn btn-primary" data-open-modal="start">
+                Start Learning
+              </button>
+              <a href="#debugger-demo" class="btn btn-secondary">
+                Explore CodeMentra
+              </a>
+            </div>
+            <p class="text-muted-sm">
+              Built for students and beginner programmers.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         23. FOOTER
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a href="#home" class="brand-link">
+              <svg class="brand-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <rect x="4" y="4" width="56" height="56" rx="14" fill="#0B1120" stroke="#3B82F6" stroke-width="3" />
+                <path d="M27 20L15 32L27 44" stroke="#60A5FA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M37 44L49 32L37 20" stroke="#818CF8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" />
+                <path d="M35 22L37.2 28.8L44 31L37.2 33.2L35 40L32.8 33.2L26 31L32.8 28.8L35 22Z" fill="#93C5FD" />
+              </svg>
+              <span>CodeMentra AI</span>
+            </a>
+            <p class="text-body-muted">
+              Your Personalized AI Coding Mentor
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Footer Navigation">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#learning-journey">Learning Journey</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+            <button type="button" class="footer-link-btn" data-open-modal="start">Contact</button>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CodeMentra AI. All rights reserved.</p>
+          <div class="social-links" aria-label="Social Media Placeholders">
+            <a href="#" data-placeholder-link="GitHub">GitHub</a>
+            <a href="#" data-placeholder-link="LinkedIn">LinkedIn</a>
+            <a href="#" data-placeholder-link="Instagram">Instagram</a>
+            <a href="#" data-placeholder-link="YouTube">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         26. CONTACT / GET STARTED MODAL
+         ==================================================================== -->
+    <div
+      class="modal-backdrop"
+      id="get-started-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modal-title-text"
+    >
+      <div class="modal-dialog">
+        <button
+          type="button"
+          class="modal-close-btn"
+          id="modal-close-btn"
+          aria-label="Close modal"
+        >
+          ✕
+        </button>
+
+        <div id="modal-form-container">
+          <div class="section-kicker">
+            <span class="section-kicker-dot" aria-hidden="true"></span>
+            <span>CodeMentra AI Onboarding (Frontend Demo)</span>
+          </div>
+          <h3 id="modal-title-text" class="modal-heading">
+            Start Your Learning Journey
+          </h3>
+          <p class="text-body-muted" style="margin-bottom: 24px;">
+            Configure your programming level and primary goal to preview your personalized AI coding mentor.
+          </p>
+
+          <form id="onboarding-form" novalidate>
+            <div class="form-group">
+              <label for="learner-name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="learner-name"
+                class="form-control"
+                placeholder="e.g., Alex Sharma"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="learner-email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="learner-email"
+                class="form-control"
+                placeholder="alex@university.edu"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="learner-level" class="form-label">Programming Level</label>
+              <select id="learner-level" class="form-control">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="learner-goal" class="form-label">Learning Goal</label>
+              <select id="learner-goal" class="form-control">
+                <option value="Learn Programming">Learn Programming</option>
+                <option value="Improve Problem Solving">Improve Problem Solving</option>
+                <option value="Prepare for Placements">Prepare for Placements</option>
+                <option value="Build Projects">Build Projects</option>
+                <option value="Prepare for Interviews">Prepare for Interviews</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Start My Journey
+            </button>
+          </form>
+        </div>
+
+        <!-- Submission Confirmation State -->
+        <div id="onboarding-success" class="modal-success-state" aria-live="polite">
+          <div class="modal-success-icon" aria-hidden="true">
+            ✓
+          </div>
+          <h3 class="modal-heading">
+            Welcome to CodeMentra AI.
+          </h3>
+          <p class="text-body-secondary" style="margin-bottom: 24px;">
+            Your learning journey starts here.
+          </p>
+          <button type="button" class="btn btn-secondary" id="reset-modal-btn">
+            Explore Interactive Demos
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Blueprint Preview Modal -->
+    <div
+      class="modal-backdrop"
+      id="project-blueprint-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="pm-title"
+    >
+      <div class="modal-dialog">
+        <button
+          type="button"
+          class="modal-close-btn"
+          id="project-modal-close"
+          aria-label="Close project preview"
+        >
+          ✕
+        </button>
+        <div id="pm-meta" class="mono-tag-cyan">
+          Example Learning Project
+        </div>
+        <h3 id="pm-title" class="modal-heading">
+          Personal Portfolio
+        </h3>
+        <p id="pm-desc" class="text-body-secondary" style="margin-bottom: 18px;"></p>
+
+        <div class="form-group">
+          <span class="mono-tag">
+            CORE SKILLS PRACTICED
+          </span>
+          <p id="pm-skills" class="project-skills-text"></p>
+        </div>
+
+        <div class="form-group">
+          <span class="mono-tag">
+            GUIDED MILESTONES
+          </span>
+          <ul id="pm-milestones" class="text-muted-sm"></ul>
+        </div>
+
+        <div class="analysis-item hint" style="margin-bottom: 20px;">
+          <span class="analysis-item-label">How CodeMentra AI Guides You:</span>
+          <p id="pm-mentor-hint"></p>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block" data-open-modal="start">
+          Start Building This Project
+        </button>
+      </div>
+    </div>
+
+    <!-- Back to Top Button & Toast Container -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

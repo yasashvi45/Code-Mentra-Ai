@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="cmGrad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="55%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="cmSpark" x1="30" y1="16" x2="48" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93C5FD" />
+      <stop offset="100%" stop-color="#C4B5FD" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0B1120" stroke="url(#cmGrad)" stroke-width="2.5" />
+  <path d="M27 20L15 32L27 44" stroke="url(#cmGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M37 44L49 32L37 20" stroke="url(#cmGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.45" />
+  <path d="M35 22L37.2 28.8L44 31L37.2 33.2L35 40L32.8 33.2L26 31L32.8 28.8L35 22Z" fill="url(#cmSpark)" />
+</svg>

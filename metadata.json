@@ -1,0 +1,6 @@
+{
+  "name": "CodeMentra AI",
+  "description": "CodeMentra AI helps students and beginner programmers learn coding, debug errors, practice programming, build projects and prepare for technical interviews with personalized AI guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
